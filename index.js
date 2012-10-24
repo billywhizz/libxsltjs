@@ -1,1 +1,1 @@
-exports.Processor = require("./lib/processor").Processor;
+exports.Processor = require("./build/Release/processor").Processor;

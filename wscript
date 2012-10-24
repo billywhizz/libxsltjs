@@ -22,7 +22,7 @@ def configure(conf):
 def build(bld):
   obj = bld.new_task_gen("cxx", "shlib", "node_addon")
   obj.target = "processor"
-  obj.source = "src/processor.cc"
+  obj.source = "src/processor.cpp"
   obj.uselib = "xml2,xslt"
 
 def shutdown():
