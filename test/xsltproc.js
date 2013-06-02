@@ -1,0 +1,10 @@
+var fs = require("fs");
+var Processor = require("../").Processor;
+var xmlrx = new RegExp("<\\?xml.*\\?>\\s*");
+var xslt = fs.readFileSync(process.argv[2] || "./in.xsl", "utf8");
+var proc = new Processor();
+proc.parseString(xslt);
+var res = proc.processString(fs.readFileSync(process.argv[3] || "./in.xml", "utf8")).replace(xmlrx, "");
+var b = new Buffer(res);
+process.stdout.write(res);
+proc.free();

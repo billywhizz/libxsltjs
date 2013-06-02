@@ -1,5 +1,5 @@
 var fs = require("fs");
-var Converter = require("../lib/xml2json").Converter;
+var Converter = require("../").JSONConverter;
 
 var c = new Converter();
 var doc = fs.readFileSync(process.argv[3] || "./test/test.xml", "utf8");

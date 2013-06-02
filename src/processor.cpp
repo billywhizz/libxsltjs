@@ -208,9 +208,12 @@ namespace libxsltjs {
 
 }  // namespace libxsltjs
 
+NODE_MODULE(processor, libxsltjs::XslProcessor::Initialize)
+/*
 extern "C" void
 init (Handle<Object> target) 
 {
   HandleScope scope;
   libxsltjs::XslProcessor::Initialize(target);
 }
+*/
