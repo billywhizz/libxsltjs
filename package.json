@@ -18,5 +18,17 @@
     "node": "0.10.*",
     "npm": "1.2.25"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "install": "node-gyp rebuild"
+  },
+  "gypfile": true,
+  "bugs": {
+    "url": "https://github.com/billywhizz/libxsltjs/issues"
+  },
+  "description": "bindings for libxslt",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  }
 }
