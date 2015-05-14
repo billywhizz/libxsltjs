@@ -1,0 +1,22 @@
+{
+  "name": "libxsltjs",
+  "version": "0.1.0",
+  "private": false,
+  "author": "Andrew Johnston <apjohnsto@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/billywhizz/libxsltjs"
+  },
+  "keywords": [
+    "bindings",
+    "xslt",
+    "xml"
+  ],
+  "dependencies": {},
+  "homepage": "https://github.com/billywhizz/",
+  "engines": {
+    "node": "0.10.*",
+    "npm": "1.2.25"
+  },
+  "license": "MIT"
+}
